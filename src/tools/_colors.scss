@@ -1,0 +1,9 @@
+@function color($key, $variant: regular) {
+  $key-value: map-get($colors, $key);
+
+  @if type-of($key-value) == map {
+    @return map-get($key-value, $variant);
+  }
+
+  @return map-get($key-value);
+}

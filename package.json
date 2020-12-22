@@ -1,0 +1,32 @@
+{
+  "name": "css-framework",
+  "version": "0.0.1",
+  "description": "A minimal, responsive, style-agnostic CSS framework.",
+  "main": "app.scss",
+  "directories": {
+    "lib": "src/css-framework"
+  },
+  "scripts": {
+    "lint": "stylelint ./**/*.scss --syntax scss",
+    "build": "node-sass --output-style compressed --precision 9 src/styles.scss > lib/css-framework.css"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "keywords": [
+    "css",
+    "sass",
+    "minimal",
+    "responsive",
+    "framework",
+    "toolkit"
+  ],
+  "author": "Joe Dinsdale (joedinsdale@pm.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^13.8.0"
+  }
+}

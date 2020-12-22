@@ -1,0 +1,7 @@
+@function spacing($size: 0) {
+  @if type_of($size) == number {
+    @return nth($spacing, $size);
+  } @else {
+    @warn "Value must be a number";
+  }
+}

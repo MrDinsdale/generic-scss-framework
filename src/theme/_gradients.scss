@@ -1,0 +1,43 @@
+$gradients: (
+  primary: (
+    0%: #7986cb,
+    100%: #3f51b5,
+  ),
+  secondary: (
+    0%: #ff4081,
+    100%: #f50057,
+  ),
+) !default;
+
+$gradient-directions: (
+  vertical: (
+    legacy: "top",
+    standard: "to bottom",
+    type: linear,
+    reverse: false,
+  ),
+  vertical-invert: (
+    legacy: "bottom",
+    standard: "to top",
+    type: linear,
+    reverse: false,
+  ),
+  horizontal: (
+    legacy: "left",
+    standard: "to right",
+    type: linear,
+    reverse: false,
+  ),
+  horizontal-invert: (
+    legacy: "right",
+    standard: "to left",
+    type: linear,
+    reverse: false,
+  ),
+  radial: (
+    legacy: "center, ellipse cover",
+    standard: "ellipse at center",
+    type: radial,
+    reverse: true,
+  ),
+) !default;

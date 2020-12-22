@@ -1,0 +1,18 @@
+// font-size()
+// ------------------------------------
+@function font-size($key) {
+  @return map-get(map-get($typography, $key), font-size);
+}
+
+// line-height()
+// ------------------------------------
+@function line-height($key) {
+  @return map-get(map-get($typography, $key), line-height);
+}
+
+// @include font()
+// ------------------------------------
+@mixin font($key) {
+  font-size: font-size($key);
+  line-height: line-height($key);
+}
