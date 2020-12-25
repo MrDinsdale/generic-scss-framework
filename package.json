@@ -8,7 +8,8 @@
   },
   "scripts": {
     "lint": "stylelint ./**/*.scss --syntax scss",
-    "build": "node-sass --output-style compressed --precision 9 src/styles.scss > lib/css-framework.css"
+    "develop": "sass --watch src:lib",
+    "build": "sass src/index.scss lib/index.css"
   },
   "pre-commit": [
     "lint",
@@ -25,7 +26,8 @@
   "author": "Joe Dinsdale (joedinsdale@pm.me)",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^5.0.0",
+    "sass": "^1.30.0",
+    "dart-sass": "^1.25.0",
     "pre-commit": "^1.2.2",
     "stylelint": "^13.8.0"
   }

@@ -1,20 +1,32 @@
+@use '../tools';
+
 // Typography
 // ==============================================
 
-$global-font-size: 16px !default;
-$global-line-height: 24px !default;
-$global-font-family: Helvetica, Arial, sans-serif !default;
+$font-size: tools.font-size(body) !default;
+$line-height: tools.line-height(body) !default;
+$font-family: Helvetica, Arial, sans-serif !default;
 
 // Spacing
 // ==============================================
 
-$global-spacing-unit: spacing(4);
-$global-spacing-unit-tiny: spacing(1);
-$global-spacing-unit-small: spacing(2);
-$global-spacing-unit-large: spacing(6);
-$global-spacing-unit-x-large: spacing(8);
+$spacing-unit: tools.spacing(4);
+$spacing-unit-tiny: tools.spacing(1);
+$spacing-unit-small: tools.spacing(2);
+$spacing-unit-large: tools.spacing(6);
+$spacing-unit-x-large: tools.spacing(8);
 
 // Container
 // ==============================================
 
-$global-container-width: 1596px !default;
+$max-container-width: 1596px !default;
+
+// Utilities
+// ==============================================
+
+$layout-widths: 1 2 3 4 5 6 !default;
+
+// Misc
+// ==============================================
+
+$radius: 4px;

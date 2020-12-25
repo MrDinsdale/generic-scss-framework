@@ -1,13 +1,26 @@
+@use "sass:map";
+@use "../theme";
+
 // font-size()
 // ------------------------------------
 @function font-size($key) {
-  @return map-get(map-get($typography, $key), font-size);
+  @if map.has-key(theme.$typography, $key, font-size) {
+    @return map.get(theme.$typography, $key, font-size);
+  } @else {
+    @warn "font-size() : key (#{$key}) must be a valid value";
+    @return null;
+  }
 }
 
 // line-height()
 // ------------------------------------
 @function line-height($key) {
-  @return map-get(map-get($typography, $key), line-height);
+  @if map.has-key(theme.$typography, $key, line-height) {
+    @return map.get(theme.$typography, $key, line-height);
+  } @else {
+    @warn "line-height() : key (#{$key}) must be a valid value";
+    @return null;
+  }
 }
 
 // @include font()

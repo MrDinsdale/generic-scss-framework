@@ -1,38 +1,41 @@
 $colors: (
-  black: #000,
-  white: #fff,
-  grey-1: #f5f5f5,
-  grey-2: #eeeeee,
-  grey-3: #e0e0e0,
-  grey-4: #bdbdbd,
-  grey-5: #9e9e9e,
-  grey-6: #757575,
-  grey-7: #616161,
-  grey-8: #424242,
-  grey-9: #212121,
+  black: #000000,
+  white: #ffffff,
+  grey2: #f9f9f9,
+  grey5: #f5f5f5,
+  grey10: #eaeaea,
+  grey20: #c0c0c0,
+  grey40: #9f9f9f,
+  grey50: #7f7f7f,
+  grey70: #4a4a4a,
+  grey80: #222222,
   primary: (
-    light: #7986cb,
-    regular: #3f51b5,
-    dark: #303f9f,
+    regular: #0073c5,
+    light: #3e8eef,
+    dark: #004894,
   ),
-  secondary: (
-    light: #ff4081,
-    main: #f50057,
-    dark: #c51162,
+  positive: (
+    regular: #16ac2e,
+    dark: #046714,
   ),
-  error: (
-    light: #e57373,
-    main: #f44336,
-    dark: #d32f2f,
+  negative: (
+    regular: #ff2744,
+    dark: #c4001d,
   ),
-  warning: (
-    light: #ffb74d,
-    main: #ff9800,
-    dark: #f57c00,
+  attention: (
+    regular: #f15a22,
+    dark: #b72500,
   ),
-  success: (
-    light: #81c784,
-    main: #4caf50,
-    dark: #388e3c,
+  tv: (
+    regular: #5c29f9,
+    dark: #0000c5,
+  ),
+  mobile: (
+    regular: #ff4b29,
+    dark: #c40000,
+  ),
+  broadband: (
+    regular: #8e2ae6,
+    dark: #5700b3,
   ),
 ) !default;
